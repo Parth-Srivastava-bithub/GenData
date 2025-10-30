@@ -1,0 +1,68 @@
+﻿Golden Seed for Numerical Data
+Phase 1: Preparation & Scoping
+1. Define Requirements:
+   * Receive and document the initial data request from the customer.
+   * Identify the core business problem, the required data domain (e.g., healthcare, finance), and the intended use case (e.g., model training, analysis).
+2. Initial Data Triage:
+   * Perform a thorough search for existing, real-world datasets that match the requirements.
+   * [Decision Point]
+      * If a perfect dataset is found: Stop. The process is complete.
+      * If a partial dataset is found: Secure it. This will be used as the base, and the rest of this workflow will be used to generate only the missing features.
+      * If no data is found: Proceed to Phase 2.
+3. SME (Subject Matter Expert) Research:
+   * An SME in the required domain (e.g., a doctor for healthcare data) conducts formal research to gather the "ground truth."
+   * This research (using journals, textbooks, statistical abstracts) defines the plausible reality that the synthetic data must mimic.
+   * This step is critical and cannot be skipped.
+4. Create the "Ultra-Detailed Schema":
+   * Based on the SME's research, create the master specification document. This schema has two parts:
+   * A. Feature Definitions (Metadata):
+      * List every feature (column).
+      * Define its data type (e.g., string, int, float, categorical).
+      * Provide a detailed, context-rich description for each feature.
+      * Example: "Disease_Severity: Categorical ('Mild', 'Moderate', 'Severe'). This is based on the 3-stage 'XYZ' classification system, where 'Moderate' is defined by..."
+   * B. Statistical Targets (The "Measure"):
+      * Univariate Targets: (For data.describe())
+         * Numeric: Define target mean, median, min, max. (e.g., age mean: ~45).
+         * Categorical: Define target value distribution. (e.g., gender: {'Male': 48%, 'Female': 48%, 'Other': 4%}).
+      * Multivariate Targets: (For data.corr() and logical checks)
+         * Correlations: Define key relationships. (e.g., "A strong positive correlation (> 0.6) must exist between age and blood_pressure").
+         * Logical Rules: Define hard constraints. (e.g., "IF diagnosis is 'Type 1 Diabetes', THEN age must be < 40").
+
+
+Phase 2: Iterative Generation & Validation
+This phase is a manual, iterative loop performed by the SME or data scientist.
+5. Initial Sanity Check (1 Row):
+   * Write an LLM prompt based on the schema to generate one single, complete row of data.
+   * Validate this single row for factual coherence using a RAG-based tool (e.g., Perplexity, as you suggested). This checks for basic plausibility (e.g., "Does this drug plausibly treat this disease?").
+   * If the row is flawed, refine the LLM prompt and repeat until it generates a single good row.
+6. Generate First Batch (e.g., 50-100 Rows):
+   * Using the validated prompt, instruct the LLM to generate the first batch of data (e.g., 50-100 rows).
+7. Run Statistical Validation:
+   * Load the generated batch into a data analysis tool (like a Pandas DataFrame).
+   * Calculate the Actual Statistics for the batch:
+      * Run data.describe() to get actual mean, median, min, max, etc.
+      * Run data.corr() to get the actual correlation matrix.
+      * Run data['feature'].value_counts(normalize=True) to get actual distributions.
+   * Compare these Actual Statistics against the Statistical Targets defined in your schema (Step 4B).
+8. Review and Refine:
+   * [Decision Point]
+      * IF Actual Stats ≈ Target Stats: The prompt is good. Proceed to Step 9.
+      * IF Actual Stats ≠ Target Stats: The prompt is creating biased data. Do not proceed. You must refine the LLM prompt to correct the error.
+         * Example: The age mean is 30 (target is 45).
+         * Refined Prompt: "Great, now generate 100 more rows, but focus on generating patients in the 40-60 age range to balance the distribution..."
+      * After refining the prompt, go back to Step 6 and generate a new test batch.
+9. Continue Batch Generation:
+   * Repeat the loop: Generate (Step 6) -> Validate Stats (Step 7) -> Review (Step 8).
+   * Continue this iterative process, checking the cumulative statistics of your dataset at each step, until you have reached the desired size for your "golden seed."
+
+
+
+
+
+
+
+
+Phase 3: Finalization
+10. Final Dataset:
+   * The complete, iteratively-validated dataset is your final "golden seed."
+   * This process, being manual and iterative, is optimized for high-fidelity quality over speed or scale.

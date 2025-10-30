@@ -1,0 +1,101 @@
+Patient_ID,Age,BMI,Fasting_Glucose_Level (mg/dL),Genetic_Risk_Score (1-10),Exercise_Frequency,Family_History,Diabetes_Diagnosis
+1001,32,21.5,85,2,High,FALSE,Negative
+1002,48,29.8,108.5,6,Low,TRUE,Pre-Diabetic
+1003,65,34.1,145.2,9,Sedentary,TRUE,Type 2 Diabetic
+1004,55,24.5,98.1,8,Moderate,TRUE,Negative
+1005,40,31,115.6,4,Sedentary,FALSE,Pre-Diabetic
+1006,72,30.5,165.9,7,Low,TRUE,Type 2 Diabetic
+1007,28,22.1,88.4,1,High,FALSE,Negative
+1008,58,25.4,102,5,Moderate,TRUE,Pre-Diabetic
+1009,45,35.8,135.5,6,Sedentary,TRUE,Type 2 Diabetic
+1010,60,28.9,95.7,10,High,FALSE,Negative
+1011,39,27.6,118,3,Low,FALSE,Pre-Diabetic
+1012,68,32.2,190.1,8,Sedentary,TRUE,Type 2 Diabetic
+1013,51,23,92.3,4,High,TRUE,Negative
+1014,35,33.9,105.4,5,Moderate,FALSE,Pre-Diabetic
+1015,75,26.7,128.8,9,Low,TRUE,Type 2 Diabetic
+1016,42,20.1,79.5,3,High,FALSE,Negative
+1017,56,31.5,112.2,7,Sedentary,TRUE,Pre-Diabetic
+1018,25,29,98.7,2,Moderate,FALSE,Negative
+1019,63,36.6,175,10,Low,TRUE,Type 2 Diabetic
+1020,49,25.1,120.5,5,Sedentary,FALSE,Pre-Diabetic
+1021,53,28,83.9,6,High,TRUE,Negative
+1022,70,34,155,8,Moderate,TRUE,Type 2 Diabetic
+1023,30,23.5,109.1,4,Low,TRUE,Pre-Diabetic
+1024,66,21,90,9,High,FALSE,Negative
+1025,47,30.2,130.4,7,Sedentary,FALSE,Type 2 Diabetic
+1026,34,18.7,160.3,9,Low,FALSE,Type 2 Diabetic
+1027,39,37.7,127.5,9,Moderate,TRUE,Type 2 Diabetic
+1028,51,33.7,118.8,2,High,FALSE,Pre-Diabetic
+1029,60,36.9,134.3,7,Low,FALSE,Type 2 Diabetic
+1030,63,31.5,162,5,Sedentary,TRUE,Type 2 Diabetic
+1076,41,18.1,107.9,3,Low,FALSE,Pre-Diabetic
+1077,25,36.1,129.9,1,Moderate,TRUE,Type 2 Diabetic
+1078,64,19.5,85.7,3,High,FALSE,Negative
+1079,45,29.4,139.7,9,Moderate,FALSE,Type 2 Diabetic
+1080,52,37.1,136.8,10,Sedentary,FALSE,Type 2 Diabetic
+1081,29,39.8,127.5,2,High,FALSE,Type 2 Diabetic
+1082,29,22,172.1,9,Sedentary,FALSE,Type 2 Diabetic
+1083,44,28.8,82.9,3,Low,TRUE,Negative
+1084,45,23.9,160.7,8,Low,FALSE,Type 2 Diabetic
+1085,41,20.9,79.3,6,Low,FALSE,Negative
+1086,64,34.2,174.6,6,Sedentary,TRUE,Type 2 Diabetic
+1087,60,38.2,183,1,Moderate,FALSE,Type 2 Diabetic
+1088,66,21,133.3,8,Low,TRUE,Type 2 Diabetic
+1089,44,29.7,186.8,4,Sedentary,FALSE,Type 2 Diabetic
+1090,71,37.7,166.7,7,High,FALSE,Type 2 Diabetic
+1091,67,38.2,93.9,1,High,TRUE,Negative
+1092,61,30.1,111,7,Moderate,TRUE,Pre-Diabetic
+1093,51,32.6,107.1,6,Sedentary,TRUE,Pre-Diabetic
+1094,30,34.3,168.1,3,High,FALSE,Type 2 Diabetic
+1095,54,37.1,157.1,3,Moderate,FALSE,Type 2 Diabetic
+1096,43,36.8,122.6,2,High,TRUE,Pre-Diabetic
+1097,53,39.1,155.9,9,Low,TRUE,Type 2 Diabetic
+1098,47,19.9,142.5,8,High,FALSE,Type 2 Diabetic
+1099,51,24.2,143.6,9,Sedentary,TRUE,Type 2 Diabetic
+1100,67,36.4,169.9,9,Low,FALSE,Type 2 Diabetic
+1101,44,30.4,159,3,Moderate,FALSE,Type 2 Diabetic
+1102,31,19.8,160.4,6,Sedentary,FALSE,Type 2 Diabetic
+1103,39,36.4,116.2,1,Sedentary,TRUE,Pre-Diabetic
+1104,67,31.6,84.4,5,Moderate,TRUE,Negative
+1105,42,19.3,181.7,10,High,TRUE,Type 2 Diabetic
+1106,56,38.4,103.5,7,Moderate,TRUE,Pre-Diabetic
+1107,51,35.8,165.1,6,Moderate,FALSE,Type 2 Diabetic
+1108,72,35.4,107.2,6,Sedentary,FALSE,Pre-Diabetic
+1109,36,26.5,166.9,4,Moderate,TRUE,Type 2 Diabetic
+1110,25,28.9,83.5,10,Moderate,TRUE,Negative
+1111,29,33.6,122.7,7,Sedentary,TRUE,Pre-Diabetic
+1112,56,28.7,135.6,2,Low,TRUE,Type 2 Diabetic
+1113,61,36.3,137.3,8,High,FALSE,Type 2 Diabetic
+1114,36,33.3,100.3,4,Sedentary,FALSE,Pre-Diabetic
+1115,72,22.4,149.7,3,Moderate,FALSE,Type 2 Diabetic
+1116,69,28.4,171.2,6,High,TRUE,Type 2 Diabetic
+1117,38,35.7,105.9,1,Moderate,TRUE,Pre-Diabetic
+1118,51,22.1,102.7,6,Low,TRUE,Pre-Diabetic
+1119,31,30.7,80.9,4,Sedentary,FALSE,Negative
+1120,31,27.2,110.9,6,Moderate,FALSE,Pre-Diabetic
+1121,56,18.5,117.7,4,Low,FALSE,Pre-Diabetic
+1122,48,37.6,135.4,2,Moderate,TRUE,Type 2 Diabetic
+1123,26,20.2,133.5,5,High,TRUE,Type 2 Diabetic
+1124,28,29.3,152.1,5,Sedentary,FALSE,Type 2 Diabetic
+1125,70,20,166.9,8,Moderate,FALSE,Type 2 Diabetic
+1126,54,25.7,138.6,6,Low,TRUE,Type 2 Diabetic
+1127,69,32.1,177.9,6,Moderate,FALSE,Type 2 Diabetic
+1128,72,27,156.6,1,High,FALSE,Type 2 Diabetic
+1129,66,34.9,101.8,8,Low,FALSE,Pre-Diabetic
+1130,71,24.9,115.5,7,Sedentary,TRUE,Pre-Diabetic
+1131,62,30.4,100.5,9,Moderate,TRUE,Pre-Diabetic
+1132,66,31.6,77.3,3,High,TRUE,Negative
+1133,46,31,133.5,10,Moderate,FALSE,Type 2 Diabetic
+1134,71,24.6,107.7,10,High,FALSE,Pre-Diabetic
+1135,64,33.8,131.8,1,High,FALSE,Type 2 Diabetic
+1136,26,18.5,102.7,9,High,FALSE,Pre-Diabetic
+1137,60,24.4,177.7,2,Moderate,FALSE,Type 2 Diabetic
+1138,57,25.5,104.5,8,High,FALSE,Pre-Diabetic
+1139,34,30.2,145.5,8,Low,TRUE,Type 2 Diabetic
+1140,67,34.9,147.6,6,Low,TRUE,Type 2 Diabetic
+1141,38,26.9,137.9,9,Sedentary,TRUE,Type 2 Diabetic
+1142,41,20.6,82.5,2,Sedentary,FALSE,Negative
+1143,39,29,101,6,Sedentary,TRUE,Pre-Diabetic
+1144,53,38.1,189.5,8,Moderate,FALSE,Type 2 Diabetic
+1145,47,25.1,167.9,3,Moderate,TRUE,Type 2 Diabetic

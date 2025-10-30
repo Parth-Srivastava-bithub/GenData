@@ -1,0 +1,110 @@
+{
+  "univariate_analysis": {
+    "title": "Univariate Analysis",
+    "summary": "The mean age is 48.71, and the mean bmi is 27.10. The min and max glucose levels are 60 and 195.39 respectively. The unique values for
+physical_activity_level are not provided, but the most common value is moderate with a frequency of 803. Potential anomalies include the min and max values for
+glucose_level, which may indicate outliers or data entry errors.",
+    "key_findings": [
+      "Mean age: 48.71",
+      "Mean bmi: 27.10",
+      "Min glucose level: 60",
+      "Max glucose level: 195.39",
+      "Most common physical activity level: moderate (freq: 803)"
+    ]
+  },
+  "multivariate_correlation": {
+    "title": "Correlation Matrix Analysis",
+    "summary": "The correlation matrix analysis reveals several key findings, including strong positive correlations between bmi and at_risk_diabetes, moderate positive     
+correlations between age and at_risk_diabetes, and glucose_level and at_risk_diabetes, as well as weak correlations close to 0 between several features, indicating no linear
+relationship. Additionally, potential multicollinearity is observed between bmi and at_risk_diabetes.",
+    "key_findings": [
+      "Strong positive correlation between bmi and at_risk_diabetes (0.406105)",
+      "Moderate positive correlation between age and at_risk_diabetes (0.277864)",
+      "Moderate positive correlation between glucose_level and at_risk_diabetes (0.217897)",
+      "Weak correlations close to 0 between several features (e.g., age and bmi, age and glucose_level, bmi and glucose_level)",
+      "Potential multicollinearity between bmi and at_risk_diabetes (0.406105)"
+    ]
+  },
+  "categorical_relationships": {
+    "title": "Crosstabulation Analysis",
+    "summary": "No significant relationships or anomalies were found due to the lack of categorical pairs.",
+    "key_findings": [
+      "No categorical pairs found",
+      "Less than 2 categorical columns available for analysis"
+    ]
+  }
+}
+
+--- Final Automated Report (JSON) ---
+{
+  "univariate_analysis": {
+    "title": "Univariate Analysis",
+    "summary": "The analysis reveals that the mean age is 48.03, ranging from 16 to 90. All categorical features have 2 unique values, with varying frequencies. No anomalies
+were detected in terms of standard deviation, but the min and max values for age seem reasonable given the context.",
+    "key_findings": [
+      "The mean age is 48.03 with a standard deviation of 12.15",
+      "The age ranges from 16 to 90",
+      "All categorical features have 2 unique values, with frequencies ranging from 262 to 432"
+    ]
+  },
+  "multivariate_correlation": {
+    "title": "Correlation Matrix Analysis",
+    "summary": "The correlation matrix only contains one feature, Age, which is perfectly correlated with itself. There are no positive or negative correlations to report,  
+and no potential multicollinearity. The lack of other features means there are no correlations close to 0 to highlight.",
+    "key_findings": [
+      "The correlation matrix only contains one feature: Age",
+      "Age is perfectly correlated with itself (1.0)",
+      "No positive or negative correlations to report",
+      "No potential multicollinearity",
+      "No correlations close to 0"
+    ]
+  },
+  "categorical_relationships": {
+    "title": "Conditional Relationships and Distributions",
+    "summary": "There are several strong conditional relationships and uneven distributions in the crosstab tables. For example, if Polyuria is 'Yes', then Polydipsia is    
+almost always 'Yes'. Additionally, the distribution of Target is uneven, with 'Positive' being more common than 'Negative'.",
+    "key_findings": [
+      "If Polyuria is 'Yes', then Polydipsia is almost always 'Yes'",
+      "The distribution of Target is uneven, with 'Positive' being more common than 'Negative'",
+      "There are several other strong conditional relationships and uneven distributions in the crosstab tables"
+    ]
+  }
+}
+--- Final Automated Report (JSON) ---
+{
+  "univariate_analysis": {
+    "title": "Univariate Analysis",
+    "summary": "The dataset has 768 observations. Numerical features have varying means and standard deviations. Potential anomalies include zero or near-zero minimum values
+for several features and a maximum insulin value of 846, which may indicate errors or outliers.",
+    "key_findings": [
+      "Mean glucose level is 120.89, with a standard deviation of 31.97.",
+      "The minimum and maximum ages are 21 and 81, respectively.",
+      "The maximum insulin value is 846, which is significantly higher than the 75th percentile of 127.25.",
+      "The minimum blood pressure is 0, which may indicate an error or outlier.",
+      "The feature 'Outcome' has a mean of 0.35 and a standard deviation of 0.48, suggesting it may be a binary variable."
+    ]
+  },
+  "multivariate_correlation": {
+    "title": "Correlation Matrix Analysis",
+    "summary": "The correlation matrix analysis reveals several key findings, including strong positive correlations between Glucose and Outcome, strong negative
+correlations between Pregnancies and SkinThickness, and potential multicollinearity between Insulin and SkinThickness. Additionally, correlations close to 0 indicate no     
+linear relationship between certain features.",
+    "key_findings": [
+      "Strong positive correlation between Glucose and Outcome (0.466581)",
+      "Strong positive correlation between Age and Pregnancies (0.544341)",
+      "Strong positive correlation between BMI and SkinThickness (0.392573)",
+      "Strong negative correlation between Pregnancies and SkinThickness (-0.081672)",
+      "Potential multicollinearity between Insulin and SkinThickness (0.436783)",
+      "No linear relationship between Pregnancies and DiabetesPedigreeFunction (-0.033523)",
+      "No linear relationship between BloodPressure and DiabetesPedigreeFunction (0.041265)"
+    ]
+  },
+  "categorical_relationships": {
+    "title": "Univariate Analysis",
+    "summary": "No strong conditional relationships, missing combinations, or uneven distributions were found as there were less than 2 categorical columns to analyze.",    
+    "key_findings": [
+      "No categorical pairs found",
+      "Less than 2 categorical columns available for analysis"
+    ]
+  }
+}
